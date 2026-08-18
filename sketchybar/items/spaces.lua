@@ -28,10 +28,8 @@ for i = 1, 10, 1 do
     blur_radius = 12,
     background = {
       color = colors.bg1_glass,
-      border_width = 1,
       height = 26,
       corner_radius = 8,
-      border_color = colors.black,
     },
     popup = { background = { border_width = 5, border_color = colors.black } }
   })
@@ -63,7 +61,6 @@ for i = 1, 10, 1 do
     space:set({
       icon = { highlight = selected, },
       label = { highlight = selected },
-      background = { border_color = selected and colors.grey or colors.bg2 }
     })
   end)
 

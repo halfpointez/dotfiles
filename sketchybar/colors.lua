@@ -1,6 +1,6 @@
 return {
   black = 0xff15161e,
-  white = 0xffc0caf5,
+  white = 0xffe8edf9,
   red = 0xfff7768e,
   green = 0xff9ece6a,
   blue = 0xff7aa2f7,
@@ -21,8 +21,8 @@ return {
   },
   bg1 = 0xff292e42,
   bg2 = 0xff3b4261,
-  bg1_glass = 0x80292e42,
-  bg2_glass = 0x803b4261,
+  bg1_glass = 0x4d292e42,
+  bg2_glass = 0x4d3b4261,
 
   with_alpha = function(color, alpha)
     if alpha > 1.0 or alpha < 0.0 then return color end

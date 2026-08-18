@@ -14,6 +14,7 @@ sbar.default({
     padding_left = settings.paddings,
     padding_right = settings.paddings,
     background = { image = { corner_radius = 9 } },
+    shadow = { drawing = true, distance = 1, angle = 90 },
   },
   label = {
     font = {
@@ -24,12 +25,11 @@ sbar.default({
     color = colors.white,
     padding_left = settings.paddings,
     padding_right = settings.paddings,
+    shadow = { drawing = true, distance = 1, angle = 90 },
   },
   background = {
     height = 28,
     corner_radius = 9,
-    border_width = 2,
-    border_color = colors.bg2,
     image = {
       corner_radius = 9,
       border_color = colors.grey,

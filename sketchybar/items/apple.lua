@@ -16,8 +16,6 @@ local apple = sbar.add("item", {
   blur_radius = 12,
   background = {
     color = colors.bg2_glass,
-    border_color = colors.black,
-    border_width = 1,
     corner_radius = 8,
   },
   padding_left = 1,
