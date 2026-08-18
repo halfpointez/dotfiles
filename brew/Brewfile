@@ -1,0 +1,124 @@
+tap "anomalyco/tap"
+tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
+tap "barutsrb/tap", "https://github.com/BarutSRB/homebrew-tap", trusted: true
+tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae", trusted: true
+tap "koekeishiya/formulae", "https://github.com/asmvik/homebrew-formulae.git"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
+# Linux/OSX/FreeBSD resource monitor
+brew "bpytop"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+brew "clang-format"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Powerful, lightweight programming language
+brew "lua"
+# Tiny, lightning fast, feature-packed file manager
+brew "nnn"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Retrieves currently playing media, and simulates media actions
+brew "nowplaying-cli"
+# Theme for zsh
+brew "powerlevel10k"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Change macOS audio source from the command-line
+brew "switchaudio-osx"
+# Utility to modify the macOS Accessibility Database (TCC.db)
+brew "tccutil"
+# Terminal multiplexer
+brew "tmux"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
+# A tiling window manager for macOS based on binary space partitioning.
+brew "asmvik/formulae/yabai", trusted: true
+# Custom macOS statusbar with shell plugin, interaction and graph support
+brew "felixkratz/formulae/sketchybar"
+cask "font-googlesanscode-nerd-font"
+cask "font-sf-mono"
+cask "font-sf-pro"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Keyboard customiser
+cask "karabiner-elements"
+# Window manager
+cask "loop"
+# Tiling window manager for macOS with Niri-inspired column-based layout
+cask "barutsrb/tap/omniwm"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
+vscode "adpyke.codesnap"
+vscode "aooiu.any-reader"
+vscode "deepred.daily-anime"
+vscode "divyanshuagrawal.competitive-programming-helper"
+vscode "formulahendry.code-runner"
+vscode "james-yu.latex-workshop"
+vscode "katalon-llc.katalium"
+vscode "langningchen.cph-ng"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-ceintl.vscode-language-pack-zh-hans"
+vscode "ms-playwright.playwright"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.powershell"
+vscode "ms-vscode.remote-explorer"
+vscode "oderwat.indent-rainbow"
+vscode "oracle.oracle-java"
+vscode "pkief.material-icon-theme"
+vscode "pleiades.java-extension-pack-jdk"
+vscode "prateekmahendrakar.prettyxml"
+vscode "redhat.java"
+vscode "redhat.vscode-xml"
+vscode "ritwickdey.liveserver"
+vscode "shalldie.background"
+vscode "shardulm94.trailing-spaces"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "sst-dev.opencode"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "telesoho.vscode-markdown-paste-image"
+vscode "usernamehw.errorlens"
+vscode "vmware.vscode-boot-dev-pack"
+vscode "vmware.vscode-spring-boot"
+vscode "vscjava.migrate-java-to-azure"
+vscode "vscjava.vscode-gradle"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-java-upgrade"
+vscode "vscjava.vscode-maven"
+vscode "vscjava.vscode-spring-boot-dashboard"
+vscode "vscjava.vscode-spring-initializr"
+vscode "vue.volar"
+vscode "whizkydee.material-palenight-theme"
+vscode "xaver.clang-format"
+vscode "xxloveslife.codenovel"
+vscode "yltx.vscode-luogu"
+vscode "yzhang.markdown-all-in-one"
+npm "corepack"
