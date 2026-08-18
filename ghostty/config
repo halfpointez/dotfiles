@@ -11,4 +11,4 @@ window-save-state = always
 copy-on-select = true
 mouse-hide-while-typing = true
 cursor-style = bar
-cursor-style-blink = true
+cursor-style-blink = true 
