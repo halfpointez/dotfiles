@@ -1,0 +1,14 @@
+theme = TokyoNight
+font-family = Google Sans Code NF
+font-size = 13
+window-decoration = none
+macos-titlebar-style = hidden          
+background-opacity = 0.92
+window-padding-x = 14
+window-padding-y = 8
+window-padding-balance = true
+window-save-state = always
+copy-on-select = true
+mouse-hide-while-typing = true
+cursor-style = bar
+cursor-style-blink = true
