@@ -1,0 +1,123 @@
+############################################################
+# 焦点方向 (Alt + hjkl / 方向键)
+############################################################
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+alt - left : yabai -m window --focus west
+alt - right : yabai -m window --focus east
+alt - up : yabai -m window --focus north
+alt - down : yabai -m window --focus south
+
+############################################################
+# 移动窗口 (Shift + Alt + hjkl / 方向键)
+############################################################
+shift + alt - h : yabai -m window --move west
+shift + alt - j : yabai -m window --move south
+shift + alt - k : yabai -m window --move north
+shift + alt - l : yabai -m window --move east
+shift + alt - left : yabai -m window --move west
+shift + alt - right : yabai -m window --move east
+shift + alt - up : yabai -m window --move north
+shift + alt - down : yabai -m window --move south
+
+############################################################
+# 调整大小 (Alt + u/i/o/p)
+# 注意：yabai 使用像素值，我给了 20px 一步，你可以改
+############################################################
+alt - u : yabai -m window --resize left:-20:0
+alt - p : yabai -m window --resize right:20:0
+alt - o : yabai -m window --resize down:0:20
+alt - i : yabai -m window --resize up:0:-20
+
+# 调整大小模式 (Alt+r 进入，hjkl 调整，Esc/Enter 退出)
+alt - r : skhd -m mode resize
+:mode resize
+  h : yabai -m window --resize left:-20:0
+  l : yabai -m window --resize right:20:0
+  j : yabai -m window --resize down:0:20
+  k : yabai -m window --resize up:0:-20
+  escape : skhd -m mode default
+  enter : skhd -m mode default
+:mode default
+
+############################################################
+# 窗口状态切换 (浮动/全屏/平铺)
+############################################################
+# 切换浮动 (Alt+Shift+Space)
+shift + alt - space : yabai -m window --toggle float
+
+# 切换全屏 (Alt+f)
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+# 切换平铺方向 (Alt+v) —— yabai 中切换 split 方向
+alt - v : yabai -m window --toggle split
+
+# 切换平铺/浮动 (Alt+t)
+alt - t : yabai -m window --toggle float
+
+# 最小化 (Alt+m)
+alt - m : yabai -m window --minimize
+
+# 关闭窗口 (Alt+Shift+q)
+shift + alt - q : yabai -m window --close
+
+############################################################
+# 系统操作
+############################################################
+# 重启 yabai 服务 (Alt+Shift+r)
+shift + alt - r : yabai --restart-service
+
+# 停止 yabai (Alt+Shift+e)
+shift + alt - e : yabai --stop-service
+
+# 启动终端 (Alt+Enter) —— 改为启动 macOS 终端
+alt - enter : open -a Terminal
+
+# 暂停/恢复 yabai (Alt+Shift+p) —— 停止并重新启动
+shift + alt - p : yabai --stop-service && yabai --start-service
+
+# 重绘窗口 (Alt+Shift+w) —— 重启服务
+shift + alt - w : yabai --restart-service
+
+############################################################
+# 工作区 (Space) 切换与移动 (1-9)
+############################################################
+# 切换到工作区 1-9
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+alt - 7 : yabai -m space --focus 7
+alt - 8 : yabai -m space --focus 8
+alt - 9 : yabai -m space --focus 9
+
+# 移动当前窗口到工作区 1-9 (并跟随)
+shift + alt - 1 : yabai -m window --space 1 && yabai -m space --focus 1
+shift + alt - 2 : yabai -m window --space 2 && yabai -m space --focus 2
+shift + alt - 3 : yabai -m window --space 3 && yabai -m space --focus 3
+shift + alt - 4 : yabai -m window --space 4 && yabai -m space --focus 4
+shift + alt - 5 : yabai -m window --space 5 && yabai -m space --focus 5
+shift + alt - 6 : yabai -m window --space 6 && yabai -m space --focus 6
+shift + alt - 7 : yabai -m window --space 7 && yabai -m space --focus 7
+shift + alt - 8 : yabai -m window --space 8 && yabai -m space --focus 8
+shift + alt - 9 : yabai -m window --space 9 && yabai -m space --focus 9
+
+# 切换到最近工作区 (Alt+d)
+alt - d : yabai -m space --focus recent
+
+# 上一个/下一个活跃工作区 (Alt+a / Alt+s)
+alt - a : yabai -m space --focus prev
+alt - s : yabai -m space --focus next
+
+############################################################
+# 多显示器：移动工作区到其他显示器 (Alt+Shift+方向键)
+# yabai 使用 --display，这里映射为移动当前窗口到下一个显示器
+############################################################
+shift + alt - a : yabai -m window --display prev
+shift + alt - f : yabai -m window --display next
+shift + alt - d : yabai -m window --display north
+shift + alt - s : yabai -m window --display south

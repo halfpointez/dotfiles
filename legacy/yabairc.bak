@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# 布局：bsp（二分区平铺）
+yabai -m config layout bsp
+yabai -m config auto_balance on
+yabai -m config default_window_floating off
+
+# 窗口间隙（内边距）
+yabai -m config window_gap 12
+
+# 外间隙（为顶栏留出空间）
+yabai -m config top_padding 38
+yabai -m config bottom_padding 0
+yabai -m config left_padding 0
+yabai -m config right_padding 0
+
+# 边框
+yabai -m config window_border_width 2
+yabai -m config active_window_border_color 0xff6b4c7a   # 樱花粉聚焦
+yabai -m config normal_window_border_color 0xff3d3859   # 深紫非聚焦
+
+# 透明度（需加载脚本扩展）
+yabai -m config focused_opacity 0.98
+yabai -m config normal_opacity 0.90
+
+# 鼠标焦点跟随（关闭，与 GlazeWM 一致）
+yabai -m config focus_follows_mouse off
