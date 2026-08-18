@@ -25,26 +25,18 @@ for i = 1, 10, 1 do
     },
     padding_right = 1,
     padding_left = 1,
+    blur_radius = 12,
     background = {
-      color = colors.bg1,
+      color = colors.bg1_glass,
       border_width = 1,
       height = 26,
+      corner_radius = 8,
       border_color = colors.black,
     },
     popup = { background = { border_width = 5, border_color = colors.black } }
   })
 
   spaces[i] = space
-
-  -- Single item bracket for space items to achieve double border on highlight
-  local space_bracket = sbar.add("bracket", { space.name }, {
-    background = {
-      color = colors.transparent,
-      border_color = colors.bg2,
-      height = 28,
-      border_width = 2
-    }
-  })
 
   -- Padding space
   sbar.add("space", "space.padding." .. i, {
@@ -68,13 +60,9 @@ for i = 1, 10, 1 do
 
   space:subscribe("space_change", function(env)
     local selected = env.SELECTED == "true"
-    local color = selected and colors.grey or colors.bg2
     space:set({
       icon = { highlight = selected, },
       label = { highlight = selected },
-      background = { border_color = selected and colors.black or colors.bg2 }
-    })
-    space_bracket:set({
       background = { border_color = selected and colors.grey or colors.bg2 }
     })
   end)
